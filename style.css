@@ -1,0 +1,578 @@
+/* font-family: 'Inter', sans-serif;
+font-family: 'Quicksand', sans-serif; */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+h1 {
+    font-size: 3rem;
+    font-family: 'Inter', sans-serif;
+}
+h2 {
+    font-size: 2rem;
+    color: rgb(227, 18, 18);
+}
+h3 {
+    font-size: 1.5rem;
+    color: rgb(227, 18, 18);
+    margin-bottom: 1rem;
+}
+p {
+    font-size: 1rem;
+}
+ul {
+    list-style: none;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* aca empieza index.html */
+
+.grid {
+    display:grid;
+    grid-template-areas: 
+    "header"
+    "portada"
+    "introduccion"
+    "estandares"
+    "estandares2"
+    "footer"
+    "copyright";
+}
+.grid__header {
+    grid-area: header;
+    padding-bottom: 5px;
+    background-color: rgb(35, 35, 35);
+    border-bottom: solid 3.2px rgb(227, 18, 18);
+    text-align: center;
+}
+.grid__portada {
+    grid-area: portada;
+    background-color: rgb(35, 35, 35);
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+        ) 
+        ,url(./imagenes/portada-3.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.grid__informacion{
+    grid-area: introduccion;
+    background-color: rgb(240, 240, 240);
+    padding-bottom: 2rem;
+    text-align: center;
+    overflow: hidden;
+}
+.grid__estandares{
+    grid-area: estandares;
+    background-color: rgb(35, 35, 35);
+    padding: 2rem 0;
+    text-align: center;
+    color: white;
+}
+.grid__estandares2{
+    grid-area: estandares2;
+    background-color: rgb(240,240,240);
+    padding: 2rem 0;
+    text-align: center;
+}
+.grid__footer{
+    grid-area: footer;
+    background-color: rgb(35, 35, 35);
+    color: white;
+    border-top: solid 3.2px rgb(227, 18, 18);
+    padding-top: 1rem;
+    text-align: center;
+}
+.grid__copyright {
+    grid-area: copyright;
+    color: white;
+    background-color: rgb(35, 35, 35);
+    border-top: 3.2px solid rgb(227, 18, 18);
+    padding: 8px;
+}
+.encabezado__logo {
+    width: 100px;
+    margin-top: 0.8rem;
+}
+.encabezado__navegador__lista__item{
+    margin: 0 1rem 5px;
+}
+.encabezado__navegador__lista__item__link{
+    font-weight: bold;
+    color: rgb(244, 244, 244);
+}
+.encabezado__navegador__lista__item__link:hover{
+    color: rgb(225, 50, 50);
+}
+.portada__titulo {
+    border-top: solid 3px white;
+    border-bottom: solid 3px white;
+    text-align: center;
+    margin: 0 1rem;
+}
+.portada__titulo__span {
+    color: rgb(227, 18, 18);
+}
+.portada__titulo__h2 {
+    color: rgb(244, 244, 244);
+    font-size: 2.5rem;
+}
+.informacion__introduccion{
+    margin: 0 1rem;
+}
+.informacion__introduccion__titulo {
+    margin: 1rem 0;
+}
+.estandares__contenido__img {
+    margin: 3rem 0 2rem;
+    width: 5rem;
+}
+.lupa-desktop , .calificacion-desktop {
+    display: none;
+}
+.estandares__contenido{
+    margin: 0 1rem;
+}
+.pie-navegacion {
+    display: none;
+}
+.pie-redes__lista{
+    display: flex;
+    justify-content: center;
+}
+.img-footer {
+    width: 2.5rem;
+    margin-right: 0.5rem;
+}
+.yt {
+    width: 3.2rem;
+}
+.copyright{
+    border-top: solid 3.2px rgb(227, 18, 18);
+    padding: 0.5rem;
+}
+.pie-contacto {
+    padding-bottom: 1rem;
+}
+
+/* Aca empieza sobre-nosotros.html */
+
+.grid-sobre-nosotros {
+    grid-template-areas: 
+    "header"
+    "historia"
+    "fundadores"
+    "footer"
+    "copyright"
+}
+.grid__historia {
+    grid-area: historia;
+    margin: 0 10px;
+}
+.grid__fundadores {
+    grid-area: fundadores;
+    margin: 0 10px;
+}
+.pagina-h1 {
+    text-align: center;
+    margin: 1rem 0 3rem;
+}
+.historia__local__img {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+.tarjeta {
+    max-width: 400px;
+    margin: 0 auto 4rem;
+    background-color: rgb(244, 244, 244);
+    text-align: center;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 20px;
+}
+.pronto {
+    width: 100%;
+    border-radius: 2rem 2rem 0 0;
+}
+.historia__local__h2 {
+    margin-bottom: 8px;
+}
+.historia__local__texto{
+    padding-bottom: 1rem;
+}
+.co-titulo {
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+.co-titulo h2 {
+    color: black;
+}
+
+/* aca empieza nuestros-servicios.html */
+
+.grid-nuestros-servicios {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "titulo"
+    "servicio1"
+    "servicio2"
+    "servicio3"
+    "servicio4"
+    "servicio5"
+    "servicio6"
+    "servicio7"
+    "servicio8"
+    "footer"
+    "copyright";
+}
+.grid__titulo-texto{
+    grid-area: titulo;
+}
+.grid__servicio1{
+    grid-area: servicio1;
+    margin: 0 10px;
+}
+.grid__servicio2{
+    grid-area: servicio2;
+    margin: 0 10px;
+}
+.grid__servicio3{
+    grid-area: servicio3;
+    margin: 0 10px;
+}
+.grid__servicio4{
+    grid-area: servicio4;
+    margin: 0 10px;
+}
+.grid__servicio5{
+    grid-area: servicio5;
+    margin: 0 10px;
+}
+.grid__servicio6{
+    grid-area: servicio6;
+    margin: 0 10px;
+}
+.grid__servicio7{
+    grid-area: servicio7;
+    margin: 0 10px;
+}
+.grid__servicio8{
+    grid-area: servicio8;
+    margin: 0 10px;
+}
+.pagina-texto {
+    text-align: center;
+    margin: 0 1rem 3rem;
+}
+.servicio__img {
+    width: 100%;
+    border-radius: 2rem 2rem 0 0;
+}
+.boton {
+    text-decoration: none;
+    background-color: rgb(225, 50, 50);
+    font-size: 1.5rem;
+    padding: 5px;
+    border: solid 1px black;
+    color: white;
+    border-radius: 7px;
+}
+.servicio__h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.tarjeta > p{
+    margin: 0 1rem 2rem;
+}
+.boton-link{
+    padding-bottom: 2rem;
+}
+
+/* aca empieza preguntas-frecuentes.html */
+
+.grid-preguntas-frecuentes {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "preguntas preguntas aside"
+    "redireccion redireccion redireccion"
+    "footer footer footer"
+    "copyright copyright copyright";
+}
+.grid__frecuente {
+    grid-area: preguntas;
+}
+.grid__aside {
+    grid-area: aside;
+    display: none;
+}
+.grid__redireccion {
+    grid-area: redireccion;
+}
+.preguntas {
+    max-width: 90%;
+    margin: 0 10px 2rem;
+    padding: 1rem;
+    background-color: rgb(225, 225, 225);
+    border-radius: 1rem;
+}
+.pagina-texto p > a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black
+}
+
+
+/* aca empieza contacto.html */
+
+.grid-contacto {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "contacto-intro"
+    "formulario"
+    "mapa"
+    "footer"
+    "copyright";
+}
+.grid__contacto-intro {
+    grid-area: contacto-intro;
+}
+.grid__contacto {
+    grid-area: formulario;
+    margin: 0 10px;
+}
+.grid__mapa {
+    grid-area: mapa;
+    margin: 0 10px
+}
+.formulario {
+    background-color: rgb(244, 244, 244);
+    max-width: 400px;
+    border: black solid 1px;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px;
+    padding: 2rem;
+    margin: 0 auto 4rem;
+}
+.inputs {
+    background-color: rgb(244, 244, 244);
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    border: black solid 1px;
+}
+.boton-centrado {
+    margin-top: 2rem;
+    text-align: center;
+}
+.mapa-contacto {
+    padding: 1rem;
+    margin: 0 auto 2rem;
+    background-color: rgb(244, 244, 244);
+    border: black solid 1px;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px;
+    max-width: 500px;
+}
+
+/* aca empieza los media querie */
+
+@media screen and (min-width: 1024px) {
+    p {
+        font-size: 1.2rem;
+    }
+
+    /* media querie para index.html */
+    
+    .grid {
+        grid-template-areas: 
+        "header header"
+        "portada portada"
+        "introduccion introduccion"
+        "estandares estandares2"
+        "footer footer"
+        "copyright copyright";
+    }
+    .encabezado__logo {
+        width: 8rem;
+    }
+    .grid__informacion {
+        padding: 2rem 3rem;
+    }
+    .grid__estandares{
+        padding-left: 7rem;
+    }
+    .left {
+        margin-bottom: 2.5rem;
+    }
+    .grid__estandares2 {
+        margin-left: 0;
+        padding-right: 7rem;
+        background-color: rgb(35, 35, 35);
+        color: white;
+    }
+    .encabezado {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-evenly;
+    }
+    .encabezado__navegador__lista{
+        display: flex;
+    }
+    .grid__portada {
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .portada__titulo {
+        width: 15rem;
+        padding: 1rem 0;
+        margin-left: 3rem;
+        text-align: left;
+        overflow: hidden;
+    }
+    .portada__titulo__h2 {
+        font-size: 3.5rem;
+    }
+    .informacion__introduccion__texto{
+        margin: 0 5rem;
+    }
+    .lupa-mobile , .calificacion-mobile {
+        display: none;
+    }
+    .lupa-desktop , .calificacion-desktop {
+        display: inline;
+    }
+    .grid__footer {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 1rem;
+    }
+    .pie-navegacion{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .pie-navegacion__lista {
+        display: flex;
+        flex-direction: column;
+    }
+    .pie-navegacion__lista__item a{
+        color: white;
+    }
+    .pie-navegacion__lista__item a:hover {
+        color: rgb(225, 50, 50);
+    }
+
+    /* media querie para sobre-nosotros.html */
+
+    .historia__local {
+        display: flex;
+        text-align: left;
+    }
+    .tarjeta {
+        max-width: 1000px;
+    }
+    .historia__local__img{
+        width:50%;
+        border-radius: 2rem 0 0 2rem;
+    }
+    .historia-texto{
+        margin: 1rem 1rem;
+    }
+    .derecha {
+        flex-direction: row-reverse;
+    }
+    .img-der {
+        border-radius: 0 2rem 2rem 0;
+    }
+    .pronto{
+        width: 50%;
+        border-radius: 2rem 0 0 2rem;
+    }
+
+    /* media querie para nuestros-servicios.html */
+
+    .grid-nuestros-servicios {
+        grid-template-areas: 
+        "header header header"
+        "titulo titulo titulo"
+        "servicio1 servicio2 servicio3"
+        "servicio4 servicio5 servicio6"
+        "servicio7 servicio8 none"
+        "footer footer footer"
+        "copyright copyright copyright";
+    }
+    .tar-serv{
+        max-width: 320px;
+    }
+    .pagina-texto {
+        margin: 0 3rem 3rem;
+    }
+    .boton:hover{
+        background-color: rgb(227, 18, 18);
+    }
+
+    /* media querie para preguntas-frecuentes.html */
+
+    .grid__frecuente{
+        margin-left: 2rem;
+    }
+    .grid__aside {
+        display: flex;
+    }
+    .aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(225, 225, 225);
+        margin: 7.6rem 2rem 2rem;
+    }
+    .aside h2{
+        margin-bottom: 3rem;
+    }
+    .tarj-aside {
+        margin: 0 1rem 10rem;
+        border-radius: 0;
+        width: 200px;
+    }
+    .aside__img {
+        width: 100%;
+    }
+    .grid__redireccion {
+        grid-column: 1/3;
+    }
+    .pagina-texto a:hover {
+        color: rgb(225, 50, 50);
+    }
+    
+    /* media querie para contacto.html */
+
+    .grid-contacto {
+        grid-template-areas: 
+        "header header"
+        "contacto-intro contacto-intro"
+        "formulario mapa"
+        "footer footer"
+        "copyright copyright";
+    }
+    .iframe { height: 497px;}
+}
