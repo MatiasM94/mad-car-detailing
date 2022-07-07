@@ -490,6 +490,10 @@ a {
     }
     .tarjeta {
         max-width: 1000px;
+        transition: all 1.5s;
+    }
+    .tarjeta:hover {
+        transform: scale(1.2);
     }
     .historia__local__img{
         width:50%;

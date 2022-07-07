@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>MAD | Sobre Nosotros</title>
 </head>
 
@@ -37,7 +38,7 @@
 
     <section class="grid__historia">
         <h1 class="pagina-h1">Nuestro Recorrido</h1>
-        <div class="tarjeta historia__local">
+        <div class="tarjeta historia__local" data-aos="fade-right" data-aos-duration="1500">
             <img class="historia__local__img" src="../imagenes/garage.jpg" alt="1er taller, un garage">
             <div class="historia-texto">
                 <h2 class="historia__local__h2">Nuestro inicio</h2>
@@ -49,7 +50,7 @@
                     ullam. Libero voluptas error ab perferendis.</p>
             </div>
         </div>
-        <div class="tarjeta historia__local derecha">
+        <div class="tarjeta historia__local derecha" data-aos="fade-left" data-aos-duration="1500">
             <img class="historia__local__img img-der" src="../imagenes/centro-estetica-vehicular.jpg"
                 alt="taller preparado exclusivamente para el detailing">
             <div class="historia-texto">
@@ -62,7 +63,7 @@
                     ullam. Libero voluptas error ab perferendis.</p>
             </div>
         </div>
-        <div class="tarjeta historia__local">
+        <div class="tarjeta historia__local" data-aos="fade-right" data-aos-duration="1500">
             <img class="pronto" src="../imagenes/coming-soon.jpg" alt="relanzamiento">
             <div class="historia-texto">
                 <h2 class="historia__local__h2">Actualidad</h2>
@@ -79,7 +80,7 @@
         <div class="co-titulo">
             <h2>Fundadores</h2>
         </div>
-        <div class="tarjeta fundador">
+        <div class="tarjeta fundador" data-aos="fade-left" data-aos-duration="1500">
             <img class="fundador__img" src="" alt="foto del equipo de trabajo mad">
             <div class="historia-texto">
                 <h2 class="historia__local__h2">Nombre del detailer y su historia</h2>
@@ -92,7 +93,7 @@
                     veritatis autem laudantium ea.</p>
             </div>
         </div>
-        <div class="tarjeta fundador">
+        <div class="tarjeta fundador" data-aos="fade-right" data-aos-duration="1500">
             <img class="fundador__img" src="" alt="Foto de (nombre)">
             <div class="historia-texto">
                 <h2 class="historia__local__h2">Nombre del detailer y su historia</h2>
@@ -144,6 +145,10 @@
     <div class="grid__copyright">
         copyright&copy; 2022 - Página creada por Matias Monzón - Todos los derechos reservados
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
