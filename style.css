@@ -36,26 +36,10 @@ a {
 
 /* aca empieza index.html */
 
-.grid {
-    display:grid;
-    grid-template-areas: 
-    "header"
-    "portada"
-    "introduccion"
-    "estandares"
-    "estandares2"
-    "footer"
-    "copyright";
+.carousel {
+    display: none;
 }
-.grid__header {
-    grid-area: header;
-    padding-bottom: 5px;
-    background-color: rgb(35, 35, 35);
-    border-bottom: solid 3.2px rgb(227, 18, 18);
-    text-align: center;
-}
-.grid__portada {
-    grid-area: portada;
+.portada {
     background-color: rgb(35, 35, 35);
     height: 80vh;
     background-position: center;
@@ -65,61 +49,21 @@ a {
         0deg,
         rgba(0,0,0,0.4),
         rgba(0,0,0,0.4)
-        ) 
-        ,url(./imagenes/portada-3.jpg);
+        ), url(./imagenes/portada-3.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
 }
-.grid__informacion{
-    grid-area: introduccion;
-    background-color: rgb(240, 240, 240);
-    padding-bottom: 2rem;
-    text-align: center;
-    overflow: hidden;
-}
-.grid__estandares{
-    grid-area: estandares;
-    background-color: rgb(35, 35, 35);
-    padding: 2rem 0;
-    text-align: center;
+.nav-link {
     color: white;
 }
-.grid__estandares2{
-    grid-area: estandares2;
-    background-color: rgb(240,240,240);
-    padding: 2rem 0;
-    text-align: center;
-}
-.grid__footer{
-    grid-area: footer;
+.sticky-top {
     background-color: rgb(35, 35, 35);
-    color: white;
-    border-top: solid 3.2px rgb(227, 18, 18);
-    padding-top: 1rem;
-    text-align: center;
-}
-.grid__copyright {
-    grid-area: copyright;
-    color: white;
-    background-color: rgb(35, 35, 35);
-    border-top: 3.2px solid rgb(227, 18, 18);
-    padding: 8px;
+    border-bottom: 3.2px solid rgb(227, 18, 18);
 }
 .encabezado__logo {
-    width: 100px;
-    margin-top: 0.8rem;
-}
-.encabezado__navegador__lista__item{
-    margin: 0 1rem 5px;
-}
-.encabezado__navegador__lista__item__link{
-    font-weight: bold;
-    color: rgb(244, 244, 244);
-}
-.encabezado__navegador__lista__item__link:hover{
-    color: rgb(225, 50, 50);
+    width: 70px;
 }
 .portada__titulo {
     border-top: solid 3px white;
@@ -129,47 +73,65 @@ a {
 }
 .portada__titulo__span {
     color: rgb(227, 18, 18);
+    font-weight: 600;
 }
 .portada__titulo__h2 {
     color: rgb(244, 244, 244);
     font-size: 2.5rem;
 }
-.informacion__introduccion{
-    margin: 0 1rem;
+.col {
+    text-align: center;
+}
+.informacion {
+    background-color: rgb(244, 244, 244);
+    padding-bottom: 2rem;
 }
 .informacion__introduccion__titulo {
-    margin: 1rem 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.estandares {
+    background-color: rgb(35, 35, 35);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    color: white;
+}
+.blanco {
+    background-color: rgb(240, 240, 240);
+    color: black;
 }
 .estandares__contenido__img {
     margin: 3rem 0 2rem;
     width: 5rem;
 }
-.lupa-desktop , .calificacion-desktop {
-    display: none;
-}
-.estandares__contenido{
-    margin: 0 1rem;
+footer {
+    background-color: rgb(35, 35, 35);
+    border-top: 3.2px solid rgb(227, 18, 18);
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
 }
 .pie-navegacion {
     display: none;
 }
-.pie-redes__lista{
+.pie-redes__lista {
     display: flex;
     justify-content: center;
+    margin-bottom: 1rem;
+    padding: 0;
 }
-.img-footer {
-    width: 2.5rem;
-    margin-right: 0.5rem;
+.bi {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 5px;
+    color: white;
 }
-.yt {
-    width: 3.2rem;
-}
-.copyright{
-    border-top: solid 3.2px rgb(227, 18, 18);
-    padding: 0.5rem;
-}
-.pie-contacto {
-    padding-bottom: 1rem;
+.copyright {
+    background-color: rgb(35, 35, 35);
+    border-top: 3.2px solid rgb(227, 18, 18);
+    color: white;
+    padding: 8px 0 8px;
 }
 
 /* Aca empieza sobre-nosotros.html */
@@ -203,12 +165,12 @@ a {
     margin: 0 auto 4rem;
     background-color: rgb(244, 244, 244);
     text-align: center;
-    border-radius: 2rem;
+    border-radius: 1rem;
     box-shadow: 5px 5px 20px;
 }
 .pronto {
     width: 100%;
-    border-radius: 2rem 2rem 0 0;
+    border-radius: 1rem 1rem 0 0;
 }
 .historia__local__h2 {
     margin-bottom: 8px;
@@ -283,7 +245,7 @@ a {
 }
 .servicio__img {
     width: 100%;
-    border-radius: 2rem 2rem 0 0;
+    border-radius: 1rem 1rem 0 0;
 }
 .boton {
     text-decoration: none;
@@ -307,31 +269,24 @@ a {
 
 /* aca empieza preguntas-frecuentes.html */
 
-.grid-preguntas-frecuentes {
-    display: grid;
-    grid-template-areas: 
-    "header header header"
-    "preguntas preguntas aside"
-    "redireccion redireccion redireccion"
-    "footer footer footer"
-    "copyright copyright copyright";
+.frecuentes {
+    justify-content: center;
 }
-.grid__frecuente {
-    grid-area: preguntas;
+.accordion-button {
+    border: rgb(230, 230, 230) solid 1px;
+    font-size: 1.5rem;
 }
-.grid__aside {
-    grid-area: aside;
-    display: none;
+.accordion-button:not(.collapsed) {
+    background-color: rgb(250, 250 , 250);
+    color: rgb(225, 50, 50);
 }
-.grid__redireccion {
-    grid-area: redireccion;
+.accordion-button:focus {
+    border: 1px solid rgb(250, 173, 173);
+    box-shadow: none;
 }
-.preguntas {
-    max-width: 90%;
-    margin: 0 10px 2rem;
-    padding: 1rem;
-    background-color: rgb(225, 225, 225);
-    border-radius: 1rem;
+.accordion-item {
+    background-color: rgb(240, 240, 240);
+    margin-bottom: 2rem;
 }
 .pagina-texto p > a {
     text-decoration: none;
@@ -396,86 +351,46 @@ a {
 
 /* aca empieza los media querie */
 
+@media screen and (min-width: 768px) {
+    .portada {
+        display: none;
+    }
+    .carousel {
+        display: block;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     p {
         font-size: 1.2rem;
     }
 
     /* media querie para index.html */
-    
-    .grid {
-        grid-template-areas: 
-        "header header"
-        "portada portada"
-        "introduccion introduccion"
-        "estandares estandares2"
-        "footer footer"
-        "copyright copyright";
-    }
     .encabezado__logo {
-        width: 8rem;
+        width: 7rem;
     }
-    .grid__informacion {
-        padding: 2rem 3rem;
+    .collapse {
+        justify-content: flex-end;
     }
-    .grid__estandares{
-        padding-left: 7rem;
+    .nav-item{
+        margin-right: 8px;
     }
-    .left {
-        margin-bottom: 2.5rem;
+    .nav-link:hover {
+        color: rgb(225, 50, 50);
     }
-    .grid__estandares2 {
-        margin-left: 0;
-        padding-right: 7rem;
-        background-color: rgb(35, 35, 35);
-        color: white;
-    }
-    .encabezado {
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-evenly;
-    }
-    .encabezado__navegador__lista{
-        display: flex;
-    }
-    .grid__portada {
-        align-items: center;
-        justify-content: flex-start;
-    }
-    .portada__titulo {
-        width: 15rem;
-        padding: 1rem 0;
-        margin-left: 3rem;
-        text-align: left;
-        overflow: hidden;
-    }
-    .portada__titulo__h2 {
-        font-size: 3.5rem;
-    }
-    .informacion__introduccion__texto{
-        margin: 0 5rem;
-    }
-    .lupa-mobile , .calificacion-mobile {
-        display: none;
-    }
-    .lupa-desktop , .calificacion-desktop {
-        display: inline;
-    }
-    .grid__footer {
-        display: flex;
-        justify-content: space-around;
-        padding-bottom: 1rem;
+    .dropdown-item:hover {
+        color: rgb(225, 50, 50);
     }
     .pie-navegacion{
         display: flex;
         flex-direction: column;
-        text-align: left;
+        align-items: center;
     }
     .pie-navegacion__lista {
-        display: flex;
-        flex-direction: column;
+        padding: 0;
     }
     .pie-navegacion__lista__item a{
+        font-size: 1.2rem;
         color: white;
     }
     .pie-navegacion__lista__item a:hover {
@@ -515,16 +430,6 @@ a {
 
     /* media querie para nuestros-servicios.html */
 
-    .grid-nuestros-servicios {
-        grid-template-areas: 
-        "header header header"
-        "titulo titulo titulo"
-        "servicio1 servicio2 servicio3"
-        "servicio4 servicio5 servicio6"
-        "servicio7 servicio8 none"
-        "footer footer footer"
-        "copyright copyright copyright";
-    }
     .tar-serv{
         max-width: 320px;
     }
@@ -537,33 +442,6 @@ a {
 
     /* media querie para preguntas-frecuentes.html */
 
-    .grid__frecuente{
-        margin-left: 2rem;
-    }
-    .grid__aside {
-        display: flex;
-    }
-    .aside {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: rgb(225, 225, 225);
-        margin: 7.6rem 2rem 2rem;
-    }
-    .aside h2{
-        margin-bottom: 3rem;
-    }
-    .tarj-aside {
-        margin: 0 1rem 10rem;
-        border-radius: 0;
-        width: 200px;
-    }
-    .aside__img {
-        width: 100%;
-    }
-    .grid__redireccion {
-        grid-column: 1/3;
-    }
     .pagina-texto a:hover {
         color: rgb(225, 50, 50);
     }
