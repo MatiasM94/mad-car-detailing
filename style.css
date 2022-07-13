@@ -136,22 +136,6 @@ footer {
 
 /* Aca empieza sobre-nosotros.html */
 
-.grid-sobre-nosotros {
-    grid-template-areas: 
-    "header"
-    "historia"
-    "fundadores"
-    "footer"
-    "copyright"
-}
-.grid__historia {
-    grid-area: historia;
-    margin: 0 10px;
-}
-.grid__fundadores {
-    grid-area: fundadores;
-    margin: 0 10px;
-}
 .pagina-h1 {
     text-align: center;
     margin: 1rem 0 3rem;
@@ -173,14 +157,14 @@ footer {
     border-radius: 1rem 1rem 0 0;
 }
 .historia__local__h2 {
-    margin-bottom: 8px;
+    border-bottom: 2px solid rgb(205, 189, 189);
+    padding-bottom: 10px;
 }
 .historia__local__texto{
     padding-bottom: 1rem;
 }
 .co-titulo {
-    margin: 0 auto 2rem;
-    text-align: center;
+    margin-bottom: 2rem;
 }
 .co-titulo h2 {
     color: black;
@@ -188,57 +172,7 @@ footer {
 
 /* aca empieza nuestros-servicios.html */
 
-.grid-nuestros-servicios {
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "titulo"
-    "servicio1"
-    "servicio2"
-    "servicio3"
-    "servicio4"
-    "servicio5"
-    "servicio6"
-    "servicio7"
-    "servicio8"
-    "footer"
-    "copyright";
-}
-.grid__titulo-texto{
-    grid-area: titulo;
-}
-.grid__servicio1{
-    grid-area: servicio1;
-    margin: 0 10px;
-}
-.grid__servicio2{
-    grid-area: servicio2;
-    margin: 0 10px;
-}
-.grid__servicio3{
-    grid-area: servicio3;
-    margin: 0 10px;
-}
-.grid__servicio4{
-    grid-area: servicio4;
-    margin: 0 10px;
-}
-.grid__servicio5{
-    grid-area: servicio5;
-    margin: 0 10px;
-}
-.grid__servicio6{
-    grid-area: servicio6;
-    margin: 0 10px;
-}
-.grid__servicio7{
-    grid-area: servicio7;
-    margin: 0 10px;
-}
-.grid__servicio8{
-    grid-area: servicio8;
-    margin: 0 10px;
-}
+
 .pagina-texto {
     text-align: center;
     margin: 0 1rem 3rem;
@@ -297,32 +231,11 @@ footer {
 
 /* aca empieza contacto.html */
 
-.grid-contacto {
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "contacto-intro"
-    "formulario"
-    "mapa"
-    "footer"
-    "copyright";
-}
-.grid__contacto-intro {
-    grid-area: contacto-intro;
-}
-.grid__contacto {
-    grid-area: formulario;
-    margin: 0 10px;
-}
-.grid__mapa {
-    grid-area: mapa;
-    margin: 0 10px
-}
-.formulario {
+.formulario__contacto {
     background-color: rgb(244, 244, 244);
     max-width: 400px;
     border: black solid 1px;
-    border-radius: 1rem;
+    border-radius: 10px;
     box-shadow: 5px 5px 20px;
     padding: 2rem;
     margin: 0 auto 4rem;
@@ -340,13 +253,14 @@ footer {
     text-align: center;
 }
 .mapa-contacto {
-    padding: 1rem;
+    text-align: center;
+}
+.iframe {
     margin: 0 auto 2rem;
     background-color: rgb(244, 244, 244);
     border: black solid 1px;
-    border-radius: 1rem;
+    border-radius: 10px;
     box-shadow: 5px 5px 20px;
-    max-width: 500px;
 }
 
 /* aca empieza los media querie */
@@ -412,7 +326,7 @@ footer {
     }
     .historia__local__img{
         width:50%;
-        border-radius: 2rem 0 0 2rem;
+        border-radius: 1rem 0 0 1rem;
     }
     .historia-texto{
         margin: 1rem 1rem;
@@ -421,11 +335,11 @@ footer {
         flex-direction: row-reverse;
     }
     .img-der {
-        border-radius: 0 2rem 2rem 0;
+        border-radius: 0 1rem 1rem 0;
     }
     .pronto{
         width: 50%;
-        border-radius: 2rem 0 0 2rem;
+        border-radius: 1rem 0 0 1rem;
     }
 
     /* media querie para nuestros-servicios.html */
@@ -438,6 +352,7 @@ footer {
     }
     .boton:hover{
         background-color: rgb(227, 18, 18);
+        color: white;
     }
 
     /* media querie para preguntas-frecuentes.html */
@@ -448,13 +363,5 @@ footer {
     
     /* media querie para contacto.html */
 
-    .grid-contacto {
-        grid-template-areas: 
-        "header header"
-        "contacto-intro contacto-intro"
-        "formulario mapa"
-        "footer footer"
-        "copyright copyright";
-    }
     .iframe { height: 497px;}
 }

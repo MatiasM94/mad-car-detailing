@@ -15,7 +15,6 @@
 </head>
 
 <body>
-
     <header class="sticky-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark">
@@ -73,57 +72,65 @@
 
     <!-- contenido principal -->
     <main>
-        <section class="grid__contacto-intro">
-            <h1 class="pagina-h1">Contactanos!</h1>
-            <p class="pagina-texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut incidunt sapiente
-                nihil
-                quam. Alias ex quas error provident quod laborum cum cupiditate id magni at veniam tempore similique,
-                numquam fuga.
-                Expedita ipsa eaque nostrum itaque modi saepe earum doloremque assumenda necessitatibus esse est,
-                tenetur
-                ipsam ducimus inventore totam, quam explicabo cum adipisci eius veritatis omnis pariatur dignissimos.
-                Praesentium, alias ipsa?</p>
+        <section class="container">
+            <div class="row row">
+                <div class="col">
+                    <h1 class="pagina-h1">Contactanos!</h1>
+                    <p class="pagina-texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut incidunt
+                        sapiente
+                        nihil
+                        quam. Alias ex quas error provident quod laborum cum cupiditate id magni at veniam tempore
+                        similique,
+                        numquam fuga.
+                        Expedita ipsa eaque nostrum itaque modi saepe earum doloremque assumenda necessitatibus esse
+                        est,
+                        tenetur
+                        ipsam ducimus inventore totam, quam explicabo cum adipisci eius veritatis omnis pariatur
+                        dignissimos.
+                        Praesentium, alias ipsa?</p>
+                </div>
+            </div>
         </section>
-        <section class="grid__contacto">
-            <div class="formulario">
-                <form class="formulario__contacto">
-                    <label for="nombre">Nombre</label>
-                    <input class="inputs" type="text" placeholder="Nombre Completo" id="nombre" required>
-                    <label for="email">Email</label>
-                    <input class="inputs" type="email" placeholder="nombre@example.com" id="email" required>
-                    <label for="telefono">Telefono</label>
-                    <input class="inputs" type="tel" placeholder="Número Móvil" id="telefono">
-                    <label for="servicios">Servicio</label>
-                    <select class="inputs" name="servicios">
-                        <option value="Servicio 1">Servicio 1</option>
-                        <option value="Servicio 2">Servicio 2</option>
-                        <option value="Servicio 3">Servicio 3</option>
-                        <option value="Servicio 4">Servicio 4</option>
-                        <option value="Servicio 5">Servicio 5</option>
-                        <option value="Servicio 6">Servicio 6</option>
-                        <option value="Servicio 7">Servicio 7</option>
-                        <option value="Servicio 8">Servicio 8</option>
-                    </select>
-                    <label for="mensaje">Mensaje</label>
-                    <input class="inputs" type="text" placeholder="Dejanos tu mensaje" id="mensaje" required>
-                    <input class="check" type="checkbox" id="suscripcion">
-                    <label for="suscripcion">Suscribirme al boletin electronico</label>
-                    <div class="boton-centrado">
-                        <input class="boton enviar" type="submit" name="Enviar">
-                    </div>
-                </form>
+        <section class="container">
+            <div class="row row-cols-sm-1 row-cols-lg-2">
+                <div class="formulario">
+                    <form class="formulario__contacto">
+                        <label for="nombre">Nombre</label>
+                        <input class="inputs" type="text" placeholder="Nombre Completo" id="nombre" required>
+                        <label for="email">Email</label>
+                        <input class="inputs" type="email" placeholder="nombre@example.com" id="email" required>
+                        <label for="telefono">Telefono</label>
+                        <input class="inputs" type="tel" placeholder="Número Móvil" id="telefono">
+                        <label for="servicios">Servicio</label>
+                        <select class="inputs" name="servicios">
+                            <option value="Servicio 1">Servicio 1</option>
+                            <option value="Servicio 2">Servicio 2</option>
+                            <option value="Servicio 3">Servicio 3</option>
+                            <option value="Servicio 4">Servicio 4</option>
+                            <option value="Servicio 5">Servicio 5</option>
+                            <option value="Servicio 6">Servicio 6</option>
+                            <option value="Servicio 7">Servicio 7</option>
+                            <option value="Servicio 8">Servicio 8</option>
+                        </select>
+                        <label for="mensaje">Mensaje</label>
+                        <input class="inputs" type="text" placeholder="Dejanos tu mensaje" id="mensaje" required>
+                        <input class="check" type="checkbox" id="suscripcion">
+                        <label for="suscripcion">Suscribirme al boletin electronico</label>
+                        <div class="boton-centrado">
+                            <input class="boton enviar" type="submit" name="Enviar">
+                        </div>
+                    </form>
+                </div>
+                <div class="mapa-contacto">
+                    <h2>Nuestro Local</h2>
+                    <iframe class="iframe"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1316.6183194983878!2d-67.52651613956125!3d-46.43244749023728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde5df3553687cad%3A0xc6b2cbb3bb38b449!2sMAD%20Car%20Detailing!5e0!3m2!1ses-419!2sar!4v1654794156945!5m2!1ses-419!2sar"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </section>
 
-        <section class="grid__mapa">
-            <div class="mapa-contacto">
-                <h2>Nuestro Local</h2>
-                <iframe class="iframe"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1316.6183194983878!2d-67.52651613956125!3d-46.43244749023728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde5df3553687cad%3A0xc6b2cbb3bb38b449!2sMAD%20Car%20Detailing!5e0!3m2!1ses-419!2sar!4v1654794156945!5m2!1ses-419!2sar"
-                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
     </main>
 
     <footer>
