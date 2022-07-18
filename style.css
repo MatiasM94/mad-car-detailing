@@ -63,7 +63,7 @@ a {
     border-bottom: 3.2px solid rgb(227, 18, 18);
 }
 .encabezado__logo {
-    width: 70px;
+    width: 50px;
 }
 .portada__titulo {
     border-top: solid 3px white;
@@ -152,26 +152,36 @@ footer {
     border-radius: 1rem;
     box-shadow: 5px 5px 20px;
 }
-.pronto {
-    width: 100%;
-    border-radius: 1rem 1rem 0 0;
-}
 .historia__local__h2 {
-    border-bottom: 2px solid rgb(205, 189, 189);
+    border-bottom: 2px solid rgba(205, 189, 189, 0.753);
     padding-bottom: 10px;
 }
 .historia__local__texto{
+    margin: 0 10px;
     padding-bottom: 1rem;
 }
 .co-titulo {
+    text-align: center;
     margin-bottom: 2rem;
 }
 .co-titulo h2 {
     color: black;
 }
+.fundadores {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.fundadores__img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.fundador {
+    color: black;
+}
 
 /* aca empieza nuestros-servicios.html */
-
 
 .pagina-texto {
     text-align: center;
@@ -266,11 +276,34 @@ footer {
 /* aca empieza los media querie */
 
 @media screen and (min-width: 768px) {
+    .encabezado__logo {
+        width: 70px;
+    }
     .portada {
         display: none;
     }
     .carousel {
         display: block;
+    }
+    .historia__local {
+        display: flex;
+        text-align: left;
+    }
+    .tarjeta {
+        max-width: 1000px;
+    }
+    .historia__local__img{
+        width:50%;
+        border-radius: 1rem 0 0 1rem;
+    }
+    .historia-texto{
+        margin: 1rem 1rem;
+    }
+    .derecha {
+        flex-direction: row-reverse;
+    }
+    .img-der {
+        border-radius: 0 1rem 1rem 0;
     }
 }
 
@@ -312,34 +345,11 @@ footer {
     }
 
     /* media querie para sobre-nosotros.html */
-
-    .historia__local {
-        display: flex;
-        text-align: left;
-    }
     .tarjeta {
-        max-width: 1000px;
         transition: all 1.5s;
     }
     .tarjeta:hover {
-        transform: scale(1.2);
-    }
-    .historia__local__img{
-        width:50%;
-        border-radius: 1rem 0 0 1rem;
-    }
-    .historia-texto{
-        margin: 1rem 1rem;
-    }
-    .derecha {
-        flex-direction: row-reverse;
-    }
-    .img-der {
-        border-radius: 0 1rem 1rem 0;
-    }
-    .pronto{
-        width: 50%;
-        border-radius: 1rem 0 0 1rem;
+        transform: scale(1.15);
     }
 
     /* media querie para nuestros-servicios.html */
