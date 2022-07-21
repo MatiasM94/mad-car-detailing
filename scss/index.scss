@@ -1,0 +1,68 @@
+.carousel {
+    display: none;
+}
+.portada {
+    background-color: $color-principal;
+    background-color: rgb(35, 35, 35);
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+        ), url(../imagenes/portada-3.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.portada__titulo {
+    border-top: $borde-caja-claro;
+    border-bottom: $borde-caja-claro;
+    text-align: center;
+    margin: 0 1rem;
+    &__span{
+        color: $color-secundario;
+        font-weight: 600;
+    }
+    &__h2 {
+        color: white;
+        font-size: 2.5rem;
+    }
+}
+.informacion {
+    background-color: $fondo-claro;
+    padding-bottom: $relleno-caja;
+    &__introduccion__titulo {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+.col {
+    text-align: center;
+}
+.estandares {
+    background-color: $color-principal;
+    padding-top: $relleno-caja;
+    padding-bottom: $relleno-caja;
+    text-align: center;
+    color: white;
+    &__contenido__img {
+        margin: 3rem 0 2rem;
+        width: 5rem;
+    }
+}
+.blanco {
+    background-color: $fondo-claro;
+    color: black;
+}
+@media screen and (min-width: 768px) {
+    .portada {
+        display: none;
+    }
+    .carousel {
+        display: block;
+    }
+}

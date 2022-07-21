@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Quicksand', sans-serif; }
+
+h1 {
+  font-size: 3rem;
+  font-family: 'Inter', sans-serif; }
+
+h2 {
+  font-size: 2rem;
+  color: #e31212; }
+
+h3 {
+  font-size: 1.5rem;
+  color: #e31212; }
+
+ul, li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.sticky-top {
+  background-color: #232323;
+  border-bottom: 3.2px solid #e31212; }
+
+.encabezado__logo {
+  width: 50px; }
+
+.nav-link {
+  color: white; }
+
+footer {
+  background-color: #232323;
+  border-top: 3.2px solid #e31212;
+  color: white;
+  text-align: center;
+  padding-top: 1rem; }
+
+.pie-navegacion {
+  display: none; }
+
+.pie-redes__lista {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  padding: 0; }
+
+.bi {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 5px;
+  color: white; }
+
+.copyright {
+  background-color: #232323;
+  border-top: 3.2px solid #e31212;
+  color: white;
+  padding: 8px 0 8px; }
+
+@media screen and (min-width: 768px) {
+  .encabezado__logo {
+    width: 70px; } }
+
+@media screen and (min-width: 1024px) {
+  p {
+    font-size: 1.2rem; }
+  .encabezado__logo {
+    width: 7rem; }
+  .collapse {
+    justify-content: flex-end; }
+  .nav-item {
+    margin-right: 8px; }
+    .nav-item .nav-link:hover {
+      color: #e31212; }
+  .dropdown-item:hover {
+    color: #e31212; }
+  .pie-navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .pie-navegacion__lista {
+      padding: 0; }
+      .pie-navegacion__lista__item a {
+        font-size: 1.2rem;
+        color: white; }
+        .pie-navegacion__lista__item a:hover {
+          color: #e31212; } }
+
+.carousel {
+  display: none; }
+
+.portada {
+  background-color: #232323;
+  background-color: #232323;
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../imagenes/portada-3.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; }
+
+.portada__titulo {
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  text-align: center;
+  margin: 0 1rem; }
+  .portada__titulo__span {
+    color: #e31212;
+    font-weight: 600; }
+  .portada__titulo__h2 {
+    color: white;
+    font-size: 2.5rem; }
+
+.informacion {
+  background-color: #f4f4f4;
+  padding-bottom: 2rem; }
+  .informacion__introduccion__titulo {
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+
+.col {
+  text-align: center; }
+
+.estandares {
+  background-color: #232323;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  color: white; }
+  .estandares__contenido__img {
+    margin: 3rem 0 2rem;
+    width: 5rem; }
+
+.blanco {
+  background-color: #f4f4f4;
+  color: black; }
+
+@media screen and (min-width: 768px) {
+  .portada {
+    display: none; }
+  .carousel {
+    display: block; } }
