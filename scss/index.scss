@@ -1,9 +1,8 @@
 .carousel {
     display: none;
-}
+    }
 .portada {
-    background-color: $color-principal;
-    background-color: rgb(35, 35, 35);
+    background-color: map-get($colores, color-principal);
     height: 80vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,7 +23,7 @@
     text-align: center;
     margin: 0 1rem;
     &__span{
-        color: $color-secundario;
+        color: map-get($colores, color-secundario);
         font-weight: 600;
     }
     &__h2 {
@@ -33,7 +32,7 @@
     }
 }
 .informacion {
-    background-color: $fondo-claro;
+    background-color: map-get($colores, fondo-claro);
     padding-bottom: $relleno-caja;
     &__introduccion__titulo {
         margin-top: 2rem;
@@ -44,19 +43,20 @@
     text-align: center;
 }
 .estandares {
-    background-color: $color-principal;
-    padding-top: $relleno-caja;
-    padding-bottom: $relleno-caja;
-    text-align: center;
-    color: white;
+    @include seccion(map-get($colores, color-principal), white);
     &__contenido__img {
         margin: 3rem 0 2rem;
         width: 5rem;
     }
 }
-.blanco {
-    background-color: $fondo-claro;
-    color: black;
+.estandares-claro {
+    @include seccion(map-get($colores, fondo-claro), black)
+}
+.pagos {
+    @include seccion(map-get($colores, fondo-secundario), white);
+    &__texto {
+        margin-top: 1rem;
+    }
 }
 @media screen and (min-width: 768px) {
     .portada {

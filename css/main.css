@@ -11,6 +11,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  font-family: 'Inter', sans-serif;
   color: #e31212; }
 
 h3 {
@@ -95,7 +96,6 @@ footer {
 
 .portada {
   background-color: #232323;
-  background-color: #232323;
   height: 80vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -130,17 +130,29 @@ footer {
 
 .estandares {
   background-color: #232323;
+  color: white;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  text-align: center;
-  color: white; }
+  text-align: center; }
   .estandares__contenido__img {
     margin: 3rem 0 2rem;
     width: 5rem; }
 
-.blanco {
+.estandares-claro {
   background-color: #f4f4f4;
-  color: black; }
+  color: black;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center; }
+
+.pagos {
+  background-color: #fd4242;
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center; }
+  .pagos__texto {
+    margin-top: 1rem; }
 
 @media screen and (min-width: 768px) {
   .portada {

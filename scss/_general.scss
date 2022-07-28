@@ -11,11 +11,12 @@ h1 {
 }
 h2 {
     font-size: 2rem;
-    color: $color-secundario;
+    font-family: 'Inter', sans-serif;
+    color: map-get($colores, color-secundario);
 }
 h3 {
     font-size: 1.5rem;
-    color: $color-secundario;
+    color: map-get($colores, color-secundario);
 }
 ul, li {
     list-style: none;
@@ -24,7 +25,7 @@ a {
     text-decoration: none;
 }
 .sticky-top{
-    background-color: $color-principal;
+    background-color: map-get($colores, color-principal);
     border-bottom: $borde-caja-principal;
 }
 .encabezado__logo{
@@ -34,7 +35,7 @@ a {
     color: white;
 }
 footer {
-    background-color: $color-principal;
+    background-color: map-get($colores, color-principal);
     border-top: $borde-caja-principal;
     color: white;
     text-align: center;
@@ -56,7 +57,7 @@ footer {
     color: white;
 }
 .copyright {
-    background-color: $color-principal;
+    background-color: map-get($colores, color-principal);
     border-top: $borde-caja-principal;
     color: white;
     padding: 8px 0 8px;
@@ -79,11 +80,11 @@ footer {
     .nav-item{
         margin-right: 8px;
         .nav-link:hover {
-            color: $color-secundario;
+            color: map-get($colores, color-secundario);
         }
     }
     .dropdown-item:hover {
-        color: $color-secundario;
+        color: map-get($colores, color-secundario);
     }
     .pie-navegacion {
         display: flex;
@@ -95,7 +96,7 @@ footer {
                 font-size: 1.2rem;
                 color: white;
                 &:hover {
-                    color: $color-secundario;
+                    color: map-get($colores, color-secundario);
                 }
             }
         }

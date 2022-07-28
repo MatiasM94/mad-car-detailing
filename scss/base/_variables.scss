@@ -1,6 +1,19 @@
-$color-principal: rgb(35, 35, 35);
-$color-secundario: rgb(227, 18, 18);
-$fondo-claro: rgb(244, 244, 244);
-$borde-caja-principal: 3.2px solid rgb(227, 18, 18);
+$colores: (
+    "color-principal": rgb(35, 35, 35),
+    "color-secundario": rgb(227, 18, 18),
+    "fondo-claro": rgb(244, 244, 244),
+    "fondo-secundario": #fd4242
+);
+$borde-caja-principal: 3.2px solid map-get($colores, color-secundario);
 $borde-caja-claro: 3px solid white;
 $relleno-caja: 2rem;
+
+// mixins
+
+@mixin seccion ($bgColor, $textColor){
+    background-color: $bgColor;
+    color: $textColor;
+    padding-top: $relleno-caja;
+    padding-bottom: $relleno-caja;
+    text-align: center;
+}

@@ -1,0 +1,24 @@
+index:
+agregue las siguientes: 
+*keywords: mad car detailing, detailing, detail, detallado, estetica vehicular, pulido, pulidos, vidrio liquido, tratamiento ceramico, tratamientos ceramicos, restauracion de opticas, lavado, lavados, limpieza de motor, limpieza de interior, lavadero, lavaderos
+*description: Somos MAD Car Detailing, Tu centro de estetica vehicular en el cual cuidamos, protegemos y restauramos todas las superficies de tu vehiculo para que luzca 0Km todos los dias.
+
+sobre-nosotros:
+agregue las siguientes:
+*keywords: las mismas que coloque en index.
+*description: Nos hace ilusion dar a conocer nuestra historia para acompañar e inspirar a actuales y futuros emprendedores, el camino es dificil pero con trabajo  y dedicacion podemos alcanzar nuestras metas.
+
+nuestros-servicios:
+agregue las siguientes:
+*keywords: las mismas que en index + servicio, servicios.
+*description: En MAD Car Detailing diseñamos nuestros servicios bajo rigurosos estandares y controles de calidad que garantizan la calidad de cada uno de nuestros servicios.
+
+preguntas-frecuentes:
+agregue las siguientes:
+*keywords: las mismas que en index + faq, preguntas frecuentes, informacion.
+*description: En nuestras FAQ encontraras explicaciones sobre terminos y diferencias que no estan del todo claro en el mundo del detail.
+
+contacto:
+agregue las siguientes:
+*keywords: las mismas que en index + contacto, ubicacion.
+*description: Contactate con nosotros a travez de nuestras redes sociales o en nuestro centro de estetica vehicular para recibir asesoramiento personalizado.
